@@ -1,0 +1,94 @@
+.header {
+}
+
+.status-bar {
+	padding: 23px 25px 0 25px;
+	margin: 0 0 28px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	font-family: $font__SfProText;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 100%;
+	letter-spacing: -0.01em;
+	
+
+	&__service {
+		display: flex;
+		align-items: flex-start;
+		gap: 4px;
+
+		&_reception {
+		}
+
+		&_provider {		
+		}
+
+		&_generation{
+		}
+	}
+
+	&__time {
+		flex-basis: 100%;
+		padding-left: calc(50% - 100px);
+	}
+
+	&__battery {
+	}
+}
+.title {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 25px 9px 25px;
+
+	&__name {
+		font-style: normal;
+		font-weight: 600;
+		font-size: 28px;
+		line-height: 42px;
+	}
+
+	&__search {
+	}
+}
+
+.resent-title {
+	text-transform: uppercase;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 20px;
+	letter-spacing: 0.3em;
+	color: $main-color__whiteTransparent_contacts;
+	margin: 0 0 17px 0;
+	padding: 0 25px;
+}
+
+.resent-list {
+	display: flex;
+    justify-content: space-between;
+    text-align: center;
+	padding: 0 0 0 25px;
+	overflow: hidden;
+	gap: 30px;
+
+	&__contact {
+		margin: 0 0 29px 0;
+
+		&:last-child{
+			text-align: right;
+		}
+
+		&_photo {
+
+			& img{
+				margin: 0 0 13px 0;
+			}
+		}
+	}
+
+	&__name {
+	}
+}

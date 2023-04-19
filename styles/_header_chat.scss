@@ -1,0 +1,33 @@
+.title-chat {
+	padding-bottom: 45px;
+	gap: 10px;
+
+	&__search {
+	}
+}
+
+.title-link {
+	display: block;
+		
+	&__chat {
+		display: flex;
+		align-items: center;
+		gap: 16px;
+
+	&_photo {
+				
+		& img {
+			border-radius: 50%;
+			width: 44px;
+			height: 44px;
+		}
+	}
+
+	&_name {
+		font-weight: 600;
+		font-size: 20px;
+		line-height: 30px;
+		color: $main-color__white;
+		}
+	}	
+}

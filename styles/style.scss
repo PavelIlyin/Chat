@@ -1,0 +1,43 @@
+@import 'nullstyles';
+
+@font-face {
+	font-family: 'SF Pro Text';
+	src: url('../fonts/SF Pro Text/SFProText-Medium.ttf');
+	src: local('SF Pro Text'), local('SF Pro Text'),
+		url('../fonts/SF Pro Text/SFProText-Medium.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@import 'variables';
+@import 'header_index';
+@import 'main_index';
+@import 'header_chat';
+@import 'main_chat';
+
+
+html, body{
+    height: 100%;
+    font-family: $font__Poppins;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: $main-color__white;
+    background-color: $background__nonBasic;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contain{
+    max-width: 428px;
+    margin: 0 auto;
+    background-color: $background__contacts;
+}
+
+.main{
+    flex: 1 1 auto;
+}
