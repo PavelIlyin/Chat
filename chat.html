@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="robots" content="none">
+    <title>Chat App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@600&family=Poppins:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="contain">
+                <div class="status-bar">
+                    <div class="status-bar__service">
+                        <div class="status-bar__service_reception">
+                            <img src="./img/service/reception.png" alt="reception_image">
+                        </div>
+                        <div class="status-bar__service_provider">Service</div>
+                        <div class="status-bar__service_generation">LTE</div>
+                    </div>
+                    <div class="status-bar__time">19:02</div>
+                    <div class="status-bar__battery">
+                        <img src="./img/service/battery.png" alt="battery_image">
+                    </div>
+                </div>
+
+
+                <div class="title title-chat">
+                    <a class="title-link" href="index.html">
+                        <div class="title-link__chat">
+                            <div class="title-link__chat_photo">
+                                <img src="./img/chats/danny.png" alt="danny_photo">
+                            </div>
+                            <p class="title-link__chat_name">Danny Hopkins</p>
+                        </div>
+                    </a>
+                    <div class="title__search">
+                        <input type="image" src="./img/search/search.png" alt="search_image">
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="contain">
+                <div class="messages-list">
+                    <div class="messages-block">
+                        <div class="messages-block__time">1 FEB 12:00</div>
+                        <div class="messages-block__get">I commented on Figma, I want to add some fancy icons. Do you
+                            have any icon set?</div>
+                        <div class="messages-block__set">I am in a process of designing some. When do you need them?
+                        </div>
+                        <div class="messages-block__get">Next month?</div>
+                    </div>
+                    <div class="messages-block">
+                        <div class="messages-block__time">08:12</div>
+                        <div class="messages-block__set">I am almost finish. Please give me your email, I will ZIP them
+                            and send you as son as im finish.
+                        </div>
+                        <div class="messages-block__set">?
+                        </div>
+                    </div>
+                    <div class="messages-block">
+                        <div class="messages-block__time">08:43</div>
+                        <div class="messages-block__get">maciej.kowalski@email.com</div>
+                        <div class="messages-block__set">
+                            <img src="./img/smile/like.svg" alt="like_smile">
+                        </div>
+                    </div>
+                </div>
+                <form class="messages" action="" method="get">
+                    <div class="message-send">
+                        <label class="message-send__photo">
+                            <input type="file" name="photo" multiple accept="image/*">
+                            <img src="./img/message/photo.svg" alt="photo_add">
+                        </label>
+                        <div class="message-send__text">
+                            <textarea class="textarea">Message</textarea>
+                        </div>
+                        <button class="message-send__set" type="submit">
+                            <img src="./img/message/send.svg" alt="send_message">
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+
+    <script src="./script/chat.js"></script>
+</body>
+
+</html>
